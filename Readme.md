@@ -83,6 +83,10 @@ Include Tailwind in Your CSS:
 ```
 
 ```bash
+npm install -D @tailwindcss/line-clamp
+```
+
+```bash
 npm install classnames @tabler/icons-react react-intersection-observer
 ```
 
