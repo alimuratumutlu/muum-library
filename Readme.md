@@ -51,5 +51,5 @@ Write the following command to the terminal while you are at the root of the pro
 Run the following command to install the required packages:
 
 ```bash
-npm install react react-dom typescript tailwindcss classnames @tabler/icons-react react-intersection-observer
+npm install tailwindcss classnames @tabler/icons-react react-intersection-observer
 ```
