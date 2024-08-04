@@ -1,5 +1,7 @@
 # Muum Shared Library
 
+![alt text](https://storybook.js.org/tutorials/design-systems-for-developers/design-system-propagation.png)
+
 A collection of reusable React Components, hooks, utils and helpers that I use in my private/public projects. Here you can find the storybook that shows them all. They are built with TypeScript and Tailwind CSS, designed to streamline your development workflow.
 
 ## Components
@@ -39,7 +41,6 @@ The following npm packages are required to use this component library:
 
 ### Installing Packages
 
-![alt text](https://storybook.js.org/tutorials/design-systems-for-developers/design-system-propagation.png)
 
 This repo can be used as a central component system that can be imported by more than one project at the same time. The developers in different teams can create tests, stories and update this repo.
 
@@ -51,5 +52,39 @@ Write the following command to the terminal while you are at the root of the pro
 Run the following command to install the required packages:
 
 ```bash
-npm install tailwindcss classnames @tabler/icons-react react-intersection-observer
+npm install -D tailwindcss postcss autoprefixer
 ```
+
+```bash
+npx tailwindcss init -p
+```
+
+Update tailwind.config.js with the paths to all of your template files:
+
+```javascript
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+```
+
+Include Tailwind in Your CSS:
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+```bash
+npm install classnames @tabler/icons-react react-intersection-observer
+```
+
+
+
