@@ -1,6 +1,6 @@
-# My React Component Library
+# Muum Shared Library
 
-A collection of reusable React components built with TypeScript and Tailwind CSS, designed to streamline your development workflow.
+A collection of reusable React Components, hooks, utils and helpers that I use in my private/public projects. Here you can find the storybook that shows them all. They are built with TypeScript and Tailwind CSS, designed to streamline your development workflow.
 
 ## Components
 
